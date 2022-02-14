@@ -16,10 +16,10 @@ export const Home = () => {
             <Header email={email} />
             <Content>
                 <Sidebar>
-                    Sidebar
+                    
                 </Sidebar>
                 <Main>
-                    Main
+                    
                 </Main>
             </Content>
         </StyledHome>

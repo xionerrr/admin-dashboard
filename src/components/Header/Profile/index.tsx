@@ -44,7 +44,7 @@ export const Profile: FC<HeaderProps> = ({email}) => {
                 <ProfileInfoModalButton
                     onClick={handleLogOut}
                 >
-                    Log out...
+                    Log out
                 </ProfileInfoModalButton>
             </ProfileInfoLogOutModal>
         </StyledProfile>

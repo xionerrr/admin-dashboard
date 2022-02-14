@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const StyledHeader = styled.header`
     display: flex;
     align-items: center;
@@ -7,13 +8,12 @@ export const StyledHeader = styled.header`
     height: 70px;
     background: #FFFFFF;
     width: 100%;
+    * {
+        transition: all .3s ease;
+    }
 `
 
 export const LogoWrapper = styled.div`
-  font-size: 32px;
-  line-height: 39px;
-  color: #0043F1;
-  padding: 0 66px;
 `
 
 export const NavLinks = styled.ul`
@@ -29,6 +29,7 @@ export const NavLinkItem = styled.li`
 export const NavLinkImage = styled.img`
 
 `
+
 export const NavLinkText = styled.div`
 
 `

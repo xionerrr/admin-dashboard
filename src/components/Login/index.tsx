@@ -49,7 +49,7 @@ export const LoginComponent = () => {
                         type="email"
                         value={email}
                         onChange={emailChanger}
-                        placeholder="[a-z0-9]"
+                        placeholder="E-mail"
                         autoComplete="off"
                     />
                 </StyledInputBlock>
@@ -59,7 +59,7 @@ export const LoginComponent = () => {
                         type="password"
                         value={pass}
                         onChange={passChanger}
-                        placeholder="^.*[a-zA-Z]+.*$"
+                        placeholder="Password"
                         autoComplete="new-password"
                     />
                 </StyledInputBlock>

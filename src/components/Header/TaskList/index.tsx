@@ -1,12 +1,14 @@
+import AppsSharpIcon from '@mui/icons-material/AppsSharp';
+
 import {StyledTaskList, LinkWrapper, LinkText, StyledLink, ProgressWrapper, TaskListText, Progress } from './styled'
-import AssignmentIcon from '@mui/icons-material/Assignment';
+
 
 export const TaskList = () => {
   return (
     <StyledTaskList>
         <LinkWrapper>
             <StyledLink to="#">
-                <AssignmentIcon fontSize="medium"/>
+                <AppsSharpIcon fontSize="medium"/>
                 <LinkText>Task list</LinkText>
             </StyledLink>
         </LinkWrapper>

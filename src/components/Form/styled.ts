@@ -9,15 +9,4 @@ export const StyledForm = styled.form`
     border: 2px solid #ECECEC;
     border-radius: 16px;
     gap: 20px;
-    button {
-        width: 50%;
-        margin: 0 auto;
-        border: none;
-        font-size: 14px;
-        padding: 10px 30px;
-        cursor: pointer;
-        background: #3183FF;
-        border-radius: 24px;
-        color: #fff;
-    }
 `

@@ -1,25 +1,25 @@
-import UnarchiveIcon from '@mui/icons-material/Unarchive';
-import OutboxIcon from '@mui/icons-material/Outbox';
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import OutboxSharpIcon from '@mui/icons-material/OutboxSharp';
+import MoveToInboxSharpIcon from '@mui/icons-material/MoveToInboxSharp';
+import ShoppingCartCheckoutSharpIcon from '@mui/icons-material/ShoppingCartCheckoutSharp';
 
-import { StyledLinks, LinkWrapper, LinkText, StyledLink } from './styled'
+import { StyledLinks, LinkWrapper, LinkText, StyledLink, StyledNav } from './styled'
 
 export const Links = () => {
     const links = [
         {
             path: "#",
             label: "Sales Orders",
-            icon: <UnarchiveIcon fontSize="medium"/>
+            icon: <OutboxSharpIcon fontSize="medium"/>
         },
         {
             path: "#",
             label: "Purchase Orders",
-            icon: <OutboxIcon fontSize="medium"/>
+            icon: <MoveToInboxSharpIcon fontSize="medium"/>
         }, 
         {
             path: "#",
             label: "Products",
-            icon: <ShoppingBasketIcon fontSize="medium"/>
+            icon: <ShoppingCartCheckoutSharpIcon fontSize="medium"/>
         },
         // {
         //     path: "#",
@@ -29,22 +29,25 @@ export const Links = () => {
     ];
 
     return (
-        <StyledLinks>
+        <StyledNav>
+            <StyledLinks>
              {links.map((link) => {
                 return (
                     <LinkWrapper key={link.label}>
-                        <StyledLink to={link.path}>{
-                        
+                        <StyledLink to={link.path}>
+                            {
                                 link.icon
                             }
-                            <LinkText>{
+                            <LinkText>
+                            {
                                 link.label
-                            }</LinkText>
+                            }
+                            </LinkText>
                         </StyledLink>
                     </LinkWrapper>
                 )
-            })
-            }
-         </StyledLinks>
+            })}
+            </StyledLinks>
+        </StyledNav>
     )
 }
